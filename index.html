@@ -9,7 +9,7 @@
         <div id = "form-mask"></div>
             <h1 id = "title">build a pet</h1>
             <h3>enter in the following characteristics that you would like you pet to have.</h3>
-            <form id="myForm">
+            <form id="Form">
             <div>pet name:</div>
             <div class = "input-container">
                 <input type = "text" id = "petName">
@@ -17,7 +17,7 @@
             </div>
             <div>type of pet:</div>
             <div class = "input-container">
-            <select name = "type of pet">
+            <select name = "type of pet" id = "petType">
                 <option value = "default"></option>
                 <option value = "bird">bird</option>
                 <option value = "dragon">dragon</option>
@@ -27,12 +27,11 @@
                 <br>
             </div>
             <div>number of legs:</div>
-            <div  class = "input-container">
-                <input type="radio" name="" value=""checked><br>
-                <input type="radio" name="8" value="8">8 <br>
-                <input type="radio" name="4" value="4">4<br>
-                <input type="radio" name="2" value="2">2<br>
-                <input type="radio" name="6" value="6">6 <br>
+            <div  class = "input-container" >
+                <input type="radio" name="legs" value="8" class = "legs">8 <br>
+                <input type="radio" name="legs" value="4" class = "legs">4<br>
+                <input type="radio" name="legs" value="2" class = "legs">2<br>
+                <input type="radio" name="legs" value="6" class = "legs">6 <br>
             </div>
             <div class = "input-container">
                 <div>special abilities:</div>
@@ -43,11 +42,11 @@
             </div>
             <div class = "input-container">
                 <div>pet email:</div>
-                <input type = "email" name = "email"id = "email" required>
+                <input type = "email" name = "email" id = "email" >
             </div>
             <div class = "input-container">
                 <div> pet password </div>
-                <input type="password" name = "password" id = "password" required>
+                <input type="password" name = "password" id = "password" >
             </div>
             <div class = "input-container">
                 <div>pet description</div>
